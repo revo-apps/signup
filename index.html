@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5">
+    <title>Information Form</title>
+
+    <style>
+
+        body {
+            background: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label, h1 {
+            color: #00ff00;
+        }
+
+        input {
+            background: #151515;
+            color: #ffffff;
+            border: outset #00ffff 1px;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Information Form</h1>
+   <hr width="100%"><br>
+   
+    <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" placeholder="John" required><br><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" placeholder="Doe" required><br><br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" placeholder="johndoe@example.com" required><br><br>
+        <label for="phonenumber">Phone Number:</label><br>
+        <input type="tel" id="phonenumber" placeholder="(123) 456-7890" required><br><br>
+        <label for="occupation">Occupation</label><br>
+        <input type="text" id="occupation" placeholder="Type your occupation here"><br><br>
+        <label>Title:</label><br>
+        <input type="radio" id="Mr." name="title" value="Mr." required>
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Ms." name="title" value="Ms." required>
+        <label for="Ms.">Ms.</label>
+        <input type="radio" id="Mrs." name="title" value="Mrs." required>
+        <label for="Mrs.">Mrs.</label><br><br>
+        <input type="submit">
+        <input type="reset" value="Clear">
+    </form>
+
+</body>
+</html>
